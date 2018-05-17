@@ -1,0 +1,160 @@
+@import '../../styles/mixins/index';
+
+.home-index {
+  background-color: #fff;
+  height: 100%;
+  .clearfix;
+  position: relative;
+
+  .home-side {
+    width: 180px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid @primary-border-color;
+
+    .nav {
+      padding-left: 32px;
+      font-size: 13px;
+
+      .cell {
+        cursor: pointer;
+        position: relative;
+      }
+      .t-box {
+
+        .cell {
+
+          .box {
+            padding: 17px 0;
+            .lineblock;
+            .nav-effect-two;
+
+            span {
+              font-size: 13px;
+            }
+            span.contain-box {
+              width: 16px;
+              height: 16px;
+              margin-left: 30px;
+            }
+          }
+          .iconfont {
+            .iconfont-size-under-12px( 10px );
+          }
+        }
+      }
+      .s-box {
+        padding-left: 20px;
+
+        .cell {
+
+          .box {
+            padding: 18px 0;
+            .nav-effect-two;
+          }
+        }
+      }
+    }
+  }
+  .home-router {
+    width: ~"calc(100% - 180px)";
+    float: left;
+    height: 100%;
+    min-width: 850px;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+
+  .extend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    .handle {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      bottom: 15px;
+      right: 30px;
+    }
+    .view {
+      position: absolute;
+      top: -74px;
+      right: -420px;
+      width: 420px;
+      height: ~"calc(100% + 74px)";
+      background-color: #fff;
+      transition: right .3s;
+
+      &.open {
+        right: 0;
+        box-shadow: -5px 0 10px rgba(0,0,0,.1);
+      }
+      .box {
+        width: 100%;
+        height: ~"calc(100% - 68px)";
+        overflow: hidden;
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-right: 30px;
+      }
+      .bar {
+        width: 100%;
+        height: 68px;
+        box-shadow: 0 -5px 10px rgba(0,0,0,.1);
+        .clearfix-layout;
+        padding-top: 30px;
+        padding-left: 30px;
+
+        .link-box {
+          color: #9c9c9c;
+
+          .text {
+            .lineblock;
+            font-size: 15px;
+          }
+          .wei-text {
+            color: #1d1d1d;
+            cursor: pointer;
+            margin: 0 5px;
+            font-weight: bold;
+
+            .erweima {
+              text-align: center;
+
+              img {
+                width: 115px;
+              }
+            }
+
+            // /**
+            //  * 修改 iview Poptip min width 150px
+            //  * -----------------------------------
+            //  */
+            // .ivu-poptip-content {
+            //   width: 130px;
+            // }
+            // .ivu-poptip-popper {
+            //   left: 48px;
+            // }
+          }
+        }
+        .close-box {
+          margin-left: 80px;
+        }
+
+        .close {
+          width: 23px;
+          height: 23px;
+          cursor: pointer;
+
+          .iconfont {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}

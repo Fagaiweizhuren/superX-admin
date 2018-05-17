@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #42484c;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/**
+ * 重载 iview input 样式
+ * -----------------------
+ */
+.ivu-input:focus {
+  box-shadow: 0 0 0 2px rgba(35,190,207,.2);
+}
+.ivu-input:focus, .ivu-input:hover {
+  border-color: #23becf;
+}
+
+/**
+ * 重载 iview checkbox 样式
+ * ---------------------------
+ */
+ .ivu-checkbox-wrapper {
+   padding-top: 5px;
+   padding-bottom: 5px;
+ }
+ .ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: #23becf;
+  background-color: #23becf;
+}
+

@@ -1,0 +1,76 @@
+@btn-prefix-cls: ~"@{css-prefix}btn";
+
+.@{btn-prefix-cls} {
+  display: inline-block;
+  border-radius: @button-border-radius;
+  padding: 14px 45px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid @primary-border-color;
+  transition: border-color .3s, background-color .3s;
+  cursor: pointer;
+
+  & > span {
+    color: @normal-font-color;
+    transition: color .3s;
+  }
+
+  &:hover {
+    border-color: @button-primary-color;
+
+    & > span {
+      color: @button-primary-color;
+    }
+  }
+  &.small {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  &.on {
+    border-color: @button-primary-color;
+
+    & > span {
+      color: @button-primary-color;
+    }
+  }
+
+  &.hero {
+    border-radius: @button-hero-border-radius;
+    padding: 11px 34px;
+    background-color: @button-primary-bg-color;
+    border: none;
+    transition: transform .3s;
+
+    & > span {
+      color: @button-hero-primary-color;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 10px rgba(0,0,0,.1);
+      transform: translateY(-2px);
+      background-color: @button-primary-hover-bg-color;
+    }
+    &.on {
+      box-shadow: 0 10px 10px rgba(0,0,0,.1);
+      transform: translateY(-2px);
+      background-color: @button-primary-hover-bg-color;
+    }
+  }
+
+  &.primary {
+    background-color: @button-primary-bg-color;
+    border: none;
+
+    & > span {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: @button-primary-hover-bg-color;
+    }
+    &.on {
+      background-color: @button-primary-hover-bg-color;
+    }
+  }
+
+}

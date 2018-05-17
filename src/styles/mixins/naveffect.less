@@ -1,0 +1,72 @@
+.nav-effect-one() {
+  // parent element must set
+  // position: relative; or position: absolute;
+
+  transition: color .3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid @primary-color;
+    transition: color .3s, width .3s;
+  }
+  &:hover > * {
+    color: @primary-color;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+
+  &.select {
+
+    & > * {
+      color: @primary-color;
+    }
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-effect-two() {
+  // parent element must set
+  // position: relative; or position: absolute;
+
+  transition: color .3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    transform-origin: right;
+    width: 0;
+    right: 1px;
+    top: 3px;
+    border-bottom: 2px solid @primary-color;
+    transform: rotate(270deg);
+    transition: color .3s, width .3s;
+    display: block;
+  }
+
+  &:hover > * {
+    color: @primary-color;
+  }
+  &.select > * {
+    color: @primary-color;
+  }
+  &.no-effect > * {
+    color: inherit;
+  }
+
+  &:hover::after {
+    width: 40px;
+  }
+  &.select::after {
+    width: 40px;
+  }
+  &.no-effect::after {
+    width: 0;
+  }
+}

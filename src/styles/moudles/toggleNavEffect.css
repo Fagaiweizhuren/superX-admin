@@ -1,0 +1,19 @@
+/**
+ * moudle
+ * ----------
+ */
+.im-toggle-nav .im-toggle-nav-decoration {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg) !important;
+}
+.im-toggle-nav-open .im-toggle-nav-decoration {
+  transform: rotate(0deg) !important;
+}
+.im-toggle-nav .im-toggle-nav-box {
+  transition: height 0.3s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+.im-toggle-nav-open .im-toggle-nav-box {
+  height: auto;
+}

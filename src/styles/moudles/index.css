@@ -1,0 +1,38 @@
+/**
+ * moudle
+ * ----------
+ */
+.im-btn {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 14px 45px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #d7dde4;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.im-btn > span {
+  color: #495060;
+  transition: color .3s;
+}
+.im-btn:hover {
+  border-color: #23becf;
+}
+.im-btn:hover > span {
+  color: #23becf;
+}
+.im-btn.hero {
+  border-radius: 20px;
+  padding: 11px 34px;
+  background-color: #23becf;
+  border: none;
+  transition: transform .3s;
+}
+.im-btn.hero > span {
+  color: #fff;
+}
+.im-btn.hero:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}

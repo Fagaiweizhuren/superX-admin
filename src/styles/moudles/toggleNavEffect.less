@@ -1,0 +1,23 @@
+@import '../mixins/variables';
+@toggle-nav-prefix-cls: ~"@{css-prefix}toggle-nav";
+
+.@{toggle-nav-prefix-cls} {
+
+  & &-decoration {
+    transition: transform @transition-time @transition-easing;
+    transform: rotate(180deg) !important;
+  }
+  &-open &-decoration {
+    transform: rotate(0deg) !important;
+  }
+
+  & &-box {
+    transition: height @transition-time @transition-easing;
+    height: 0;
+    overflow: hidden;
+  }
+  &-open &-box {
+    height: auto;
+  }
+
+}

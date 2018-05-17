@@ -1,0 +1,10 @@
+/**
+ * moudle
+ * ----------
+ */
+.error .error-text {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 150px;
+  color: #67cee2;
+}
