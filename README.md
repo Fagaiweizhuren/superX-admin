@@ -1,7 +1,6 @@
 # superX-admin
 
-> A small vue front management syetem
-> use iView as the base framework
+> A small vue front management syetem, use iView as the base framework
 
 ## Build Setup
 
